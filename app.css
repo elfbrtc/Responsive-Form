@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 10px;
+}
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+input[type=text],select,textarea{
+    width: 100%;
+    border: 1px solid rgb(71, 76, 126);
+    padding: 15px;
+    border-radius: 5px;
+    resize: vertical;
+}
+input[type=submit]{
+    background-color: rgb(23, 95, 143);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input[type=submit]:hover{
+    background-color: rgb(140, 139, 145);
+}
+.container{
+    padding: 20px;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+@media screen and (max-width:768px){
+    .col-25,.col-75,input[type=submit]{
+        width: 100%;
+    }
+}
